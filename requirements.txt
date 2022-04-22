@@ -1,0 +1,10 @@
+numpy~=1.19.2
+pandas
+sklearn
+gensim
+keras
+nltk
+inflect
+bs4
+seaborn
+grpcio~=1.34.0
