@@ -11,6 +11,9 @@ import matplotlib.pyplot as plt
 
 import argparse
 
+from tensorflow.python.framework import config
+config.set_optimizer_experimental_options({'auto_mixed_precision': True})
+
 parser = argparse.ArgumentParser(description='Test an HybridCNNLSTM model')
 
 parser.add_argument('--model_dir', metavar='<model dir>', help='directory for model files')
