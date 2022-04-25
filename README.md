@@ -12,9 +12,21 @@ Structure of directory:
 - testData.csv: Processed data for testing
 - trainData.csv: Processed data for training
 
+# 00. Prepare Env
 
-## Download pre-trained word embeddings " GoogleNews-vectors-negative300.bin.gz."
+## Download " GoogleNews-vectors-negative300.bin.gz."
 
 from git repo:[word2vec-GoogleNews-vectors](https://github.com/mmihaltz/word2vec-GoogleNews-vectors), download from [GoogleNews-vectors-negative300.bin.gz](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?usp=sharing)
 
 get `*.bin` file by `$ gzip -d GoogleNews-vectors-negative300.bin.gz`
+
+## install deps lib
+
+`$ pip install -r requirements.txt`
+
+# 01. Training Model
+
+`$ python 01_train_model.py`
+# Eval or Test Model
+
+`$ python 02_eval_test_model.py`
